@@ -1,0 +1,14 @@
+# dotenv environment variable files
+.env
+.env.development
+.env.test.local
+.env.production
+.env.local
+.env.*
+
+# Typescript build / generate output
+/dist
+
+
+# Node Modules
+/node_modules
