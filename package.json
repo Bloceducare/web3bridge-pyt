@@ -34,8 +34,5 @@
     "flutterwave-node-v3": "^1.1.6",
     "module-alias": "^2.2.3",
     "web3bridgemodels": "^0.0.1"
-  },
-  "engines": {
-    "node": ">=14.20.1"
-  }
+  } 
 }
