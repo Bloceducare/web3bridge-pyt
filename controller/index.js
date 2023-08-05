@@ -1,7 +1,6 @@
-import daoModels from '../db';
-import { CustomError } from '../../utils';
+const daoModels = require("../db");
 
-export const updateDaoPayments = async (result) => {
+const updateDaoPayments = async (result) => {
   try {
     const { payments, users } = await daoModels();
     const expectedCurrency = 'USD';
@@ -11,7 +10,7 @@ export const updateDaoPayments = async (result) => {
     const amount = +result.data?.amount;
     const txnId = String(result?.data?.flw_ref + currentDate);
     if (!email) {
-      throw new CustomError('customer email not found', 404);
+      throw new Error('customer email not found', 404);
     }
 
     // user details
@@ -66,9 +65,13 @@ export const updateDaoPayments = async (result) => {
       return { code: 201, message: 'payment verified', status: true };
     }
 
-    throw new CustomError('Payment not valid', 429);
+    throw new Error('Payment not valid', 429);
   } catch (e) {
     console.log(e, 'ERROR****');
     throw e;
   }
+};
+
+module.exports = {
+  updateDaoPayments,
 };

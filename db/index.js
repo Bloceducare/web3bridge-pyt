@@ -1,6 +1,6 @@
-import { daoDB } from '../../config';
-import { connectDatabase } from '../../utils';
-import { UserModel, PaymentModel } from 'web3bridgemodels/dist/dao';
+const daoDB = process.env.DAO_DB;
+const {connectDatabase} = require("../utils");
+const {UserModel, PaymentModel} = require("web3bridgemodels/dist/dao");
 
 const daoModels = async () => {
   const connection = await connectDatabase(daoDB);
@@ -10,4 +10,7 @@ const daoModels = async () => {
   };
 };
 
-export default daoModels;
+module.exports = {
+  daoModels,
+};
+
