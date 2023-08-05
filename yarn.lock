@@ -1841,10 +1841,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-web3bridgemodels@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/web3bridgemodels/-/web3bridgemodels-0.0.1.tgz#b0c2c2d8c2061d808173d27a1e895308d503f7d0"
-  integrity sha512-CH7eUrldn6fp26W73FiSB+oHfBtUMPzwfUOM3P+oCOlRNmI/dTAETliiMtoAtIzyU62b7uJl9wYdqm3FAvSCWg==
+web3bridgemodels@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/web3bridgemodels/-/web3bridgemodels-0.0.2.tgz#4b69be2931ddc8829e037d9994f800bdf565bb1c"
+  integrity sha512-QOMF/RW3q9C9mgj/vtKMdinZNCL+s4FWlC+QWbsCpASbD59zMT3jAUib2zn8nRASrIx3RewTQRjXxdHgtA44ew==
   dependencies:
     "@types/node" "^20.4.1"
     dotenv "^16.3.1"

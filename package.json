@@ -2,11 +2,11 @@
   "name": "express-typescript",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/index.ts",
     "build": "yarn && tsc",
-    "start": "node ./src/index.js",
+    "start": "node index.ts",
     "format": "npx prettier --write .",
     "start-localhost": "next start"
   },
